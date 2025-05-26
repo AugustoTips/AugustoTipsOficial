@@ -1,9 +1,11 @@
-# Augusto Tips Web
+# 🌐 Sitio web oficial de Augusto Tips
 
-Este es el sitio oficial de **Augusto Tips**, donde puedes encontrar enlaces a:
+Bienvenido al sitio web oficial de **Augusto Tips**, tu canal de confianza para todo lo relacionado con videojuegos, tecnología e informática.
 
-- Mi canal de YouTube
-- Descargas de contenido como parches, logos y packs
-- Redes sociales y más
+🎮 Acá vas a encontrar:
+- Videos de YouTube sobre PS3, PS4, PS5 y PC
+- Parcheos, tutoriales, mods y contenido exclusivo
+- Tips de informática, telefonía móvil y tecnología en general
+- Enlaces de descarga de herramientas, packs y más
 
-Sitio web diseñado con estilo moderno y tecnología, pensado para alojarse en GitHub Pages.
+🚀 Visitalo en: https://AugustoTips.github.io
