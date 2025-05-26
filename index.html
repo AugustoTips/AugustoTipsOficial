@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Augusto Tips - Página Oficial</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="tsparticles"></div>
+
+  <header class="header">
+    <img src="logo.png" alt="Augusto Tips Logo" class="logo">
+    <h1>Augusto Tips</h1>
+    <p>Tutoriales, Gameplay y Contenido Exclusivo</p>
+  </header>
+
+  <nav class="navbar">
+  <a class="nav-link" href="https://www.youtube.com/@augustotips" target="_blank">YouTube</a>
+  <a class="nav-link" href="https://app.mediafire.com/folder/6sz44udha3vo6" target="_blank">Descargas</a>
+  <a class="nav-link" href="mailto:augustoloseco10@gmail.com">Contacto Comercial</a>
+</nav>
+
+  <section id="youtube">
+  <h2>🎮 Últimos Videos</h2>
+  <div class="video-grid">
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PLUHB4XYHsqCRwemngEecfwlfEB1rYe1P6" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PLUHB4XYHsqCSCOJOrsdhxbSuY2THDklLA" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PLUHB4XYHsqCT2OpXsJBaaeys95b_bPFzt" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PLUHB4XYHsqCT-GR_41hvgi8wgioO_sXZ3" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+  <section id="descargas">
+    <h2>📥 Descargas</h2>
+    <ul class="downloads">
+      <li><a href="https://app.mediafire.com/folder/6sz44udha3vo6" target="_blank">📂 Carpeta completa de descargas - MediaFire</a></li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+  <h2>🤝 Colaborá con el Canal</h2>
+  <p>Tu aporte ayuda a seguir creando contenido de calidad. ¡Gracias por el apoyo!</p>
+  <div class="donation-buttons">
+    <a href="https://paypal.me/augustotips" target="_blank" class="donate-button paypal">
+      <i class="fab fa-paypal"></i> Donar por PayPal
+    </a>
+    <a href="https://mpago.la/2vwmPue" target="_blank" class="donate-button mercado">
+      <i class="fas fa-hand-holding-usd"></i> Donar por Mercado Pago
+    </a>
+  </div>
+</section>
+
+    <p>Seguime en redes sociales:</p>
+    <div class="social-icons">
+      <a href="https://youtube.com/@augustotips" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://instagram.com/augustotips" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/augustotips" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://t.me/augustotips" target="_blank"><i class="fab fa-telegram"></i></a>
+      <a href="https://www.patreon.com/augustotips" target="_blank"><i class="fab fa-patreon"></i></a>
+      <a href="https://facebook.com/augustotips" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://tiktok.com/@augustotips" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    
+<p class="correo-colaboraciones">
+  <a class="nav-link" href="mailto:augustoloseco10@gmail.com?subject=Consultas y Colaboraciones">
+    📧 Consultas Comerciales y Colaboraciones
+  </a>
+</p>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Augusto Tips. Hecho con 💻 y pasión por los videojuegos.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: true, zIndex: -1 },
+      background: { color: "#0d1117" },
+      particles: {
+        number: { value: 60 },
+        color: { value: "#00ffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        move: { enable: true, speed: 1 },
+        links: {
+          enable: true,
+          color: "#00ffff",
+          distance: 100,
+          opacity: 0.3,
+          width: 1
+        }
+      },
+      interactivity: {
+        events: { onHover: { enable: true, mode: "repulse" } },
+        modes: { repulse: { distance: 100 } }
+      }
+    });
+  </script>
+</body>
+</html>
