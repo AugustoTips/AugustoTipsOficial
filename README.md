@@ -8,4 +8,4 @@ Bienvenido al sitio web oficial de **Augusto Tips**, tu canal de confianza para 
 - Tips de informática, telefonía móvil y tecnología en general
 - Enlaces de descarga de herramientas, packs y más
 
-🚀 Visitalo en: https://AugustoTips.github.io
+🚀 Visitalo en: https://augustotips.github.io/AugustoTips
