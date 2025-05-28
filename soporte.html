@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soporte Técnico Remoto - Augusto Tips</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Fondo de partículas */
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      background: #0d0d0d;
+    }
+
+    .soporte-container {
+      max-width: 800px;
+      margin: 6rem auto 4rem;
+      padding: 2rem;
+      background: rgba(13, 17, 23, 0.85);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      color: #fff;
+      text-align: center;
+    }
+
+    .soporte-container h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      margin-bottom: 1rem;
+    }
+
+    .soporte-container p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .pago-opciones {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .pago-opciones a {
+      display: inline-block;
+      background: #00ffff;
+      color: #0d0d0d;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .pago-opciones a:hover {
+      background-color: #00bcd4;
+    }
+
+    @media (min-width: 600px) {
+      .pago-opciones {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <section class="soporte-container">
+    <h1>🛠 Soporte Técnico Remoto</h1>
+    <p>Ofrezco soporte técnico remoto especializado para PC, Telefonía Móvil, Consolas PlayStation (PS2, PS3, PS4, PS5), y otros dispositivos. Ya sea para reparación de PC, Recuperar y Crear Cuentas Google, instalación de Software y Juegos, resolver errores, desbloqueos o configuraciones personalizadas, te puedo ayudar estés donde estés.</p>
+    Si necesitas instalar HEN, CFW, emuladores, parches, resolver errores o mejorar el rendimiento, puedo ayudarte de forma remota.</p>
+
+    <p>👨‍💻 Todo el soporte se realiza por Videollamada o escritorio remoto con guía paso a paso, ideal para usuarios sin experiencia.</p>
+
+    <h2 style="color: #00ffff; margin-top: 2rem;">💸 Formas de Pago</h2>
+    <p>Puedes colaborar o abonar el servicio utilizando los siguientes métodos:</p>
+
+    <div class="pago-opciones">
+      <a href="https://paypal.me/augustotips" target="_blank">🌎 PayPal (Internacional)</a>
+      <a href="http://link.mercadopago.com.ar/comienzos" target="_blank">🇦🇷 Mercado Pago (Argentina)</a>
+    </div>
+
+    <p style="margin-top: 2rem;">📧 Para coordinar el soporte, escribime a: <a href="mailto:augustoloseco10@gmail.com">augustoloseco10@gmail.com</a></p>
+  </section>
+
+  <!-- Script de Partículas -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#00ffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00ffff",
+          opacity: 0.2,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
