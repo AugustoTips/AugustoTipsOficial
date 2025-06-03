@@ -1,0 +1,360 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  text-align: center;
+}
+.header {
+  background: #0d1117;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(0, 255, 255, 0.05) 10px,
+    rgba(0, 255, 255, 0.05) 20px
+  );
+  color: #00ffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+  border-bottom: 1.5px solid #00ffff44;
+}
+.logo {
+  width: 120px;
+  border-radius: 50%;
+}
+h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+section {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+section h2 {
+  color: #00f0ff;
+  margin-bottom: 1rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 0.5rem 0;
+}
+a {
+  color: #00f0ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #ff00cc;
+}
+footer {
+  background: #111;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  background-color: #0d1117;
+  border-top: 1px solid #00ffff33;
+  border-bottom: 1px solid #00ffff33;
+}
+
+.nav-link {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 1.5px solid transparent;
+  text-align: center;
+  min-width: 140px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #00ffff;
+  color: #0d1117;
+  border-color: #00ffff;
+  outline: none;
+}
+
+/* Móvil - columna vertical */
+@media (max-width: 599px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Tablet y desktop - fila horizontal */
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+  }
+}
+
+/* Estilo para la grilla de videos (últimos videos) */
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.video-grid iframe {
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 255, 255, 0.25);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.video-grid iframe:hover {
+  transform: scale(1.04);
+}
+
+/* Responsive - Tablets (1 por fila) */
+@media (min-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive - Escritorio (2 por fila) */
+@media (min-width: 1024px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Título y texto de redes sociales más grande */
+#contacto h2,
+#contacto p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* Estilo para los íconos de redes sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1rem 0;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: #00ffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #00bcd4;
+}
+.donation-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #0d1117;
+  text-decoration: none;
+  background-clip: padding-box;
+  box-shadow: 0 0 12px #00ffffaa;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.2s ease;
+}
+
+.paypal-btn {
+  background-color: #003087;
+  color: #ffffff;
+}
+
+.paypal-btn:hover,
+.paypal-btn:focus {
+  background-color: #001f54;
+  box-shadow: 0 0 20px #0099ffcc;
+  transform: scale(1.05);
+}
+
+.mercado-btn {
+  background-color: #00a650;
+  color: #ffffff;
+}
+
+.mercado-btn:hover,
+.mercado-btn:focus {
+  background-color: #007a3d;
+  box-shadow: 0 0 20px #33cc55cc;
+  transform: scale(1.05);
+}
+
+.btn i {
+  font-size: 1.6rem;
+}
+.donation-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.donate-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.donate-button i {
+  font-size: 1.4rem;
+}
+
+/* PayPal Estilo */
+.donate-button.paypal {
+  background-color: #00457C;
+}
+.donate-button.paypal:hover {
+  background-color: #0070ba;
+  transform: scale(1.05);
+}
+
+/* Mercado Pago Estilo */
+.donate-button.mercado {
+  background-color: #009ee3;
+}
+.donate-button.mercado:hover {
+  background-color: #00c2f2;
+  transform: scale(1.05);
+}
+.correo-colaboraciones {
+  margin-top: 3rem;
+}
+.downloads-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.download-card {
+  background-color: #1e1e2f;
+  border: 2px solid #2c2c3e;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.download-card a {
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+.download-card:hover {
+  background-color: #00ffff11; /* leve resplandor celeste */
+  border-color: #00ffff;
+  box-shadow: 0 0 20px #00ffff55;
+  transform: scale(1.03);
+}
+.boton-ayuda {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #00ffff, #0077ff);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 0 15px #00ffff;
+  animation: brilloNeon 2s infinite ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 9999;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+.boton-ayuda:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #00ccff, #0055ff);
+  box-shadow: 0 0 25px #00ffff, 0 0 45px #0077ff;
+  animation: brilloNeon 1s infinite ease-in-out;
+}
+
+@keyframes brilloNeon {
+  0%, 100% {
+    box-shadow: 0 0 12px #00ffff, 0 0 24px #00ffff, 0 0 36px #0077ff;
+  }
+  50% {
+    box-shadow: 0 0 24px #00ffff, 0 0 48px #00ffff, 0 0 72px #0077ff;
+  }
+}
+
+.boton-volver-container {
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.boton-volver {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 16px;
+  color: #0ff;
+  background-color: #111;
+  border: 2px solid #0ff;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+  transition: all 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #0ff;
+  color: #111;
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+  transform: scale(1.05);
+}
+
+.ayuda-videos ul li {
+  margin-bottom: 1.2rem; /* Aumenta el espacio entre cada ítem */
+}
+
